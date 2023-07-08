@@ -1,8 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app"
+    "\\.github",
+    "\\.github\\workflows",
+    "\\app",
+    "\\app\\app",
+    "\\app\\core",
+    "\\app\\core\\management",
+    "\\app\\core\\management\\commands",
+    "\\app\\core\\management\\__init__.py",
+    "\\app\\core\\tests"
   ],
-  "SelectedNode": "\\docker-compose.yml",
+  "SelectedNode": "\\app\\core\\management\\commands\\wait_for_db.py",
   "PreviewInSolutionExplorer": false
 }
