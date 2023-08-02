@@ -7,7 +7,7 @@ from django.urls import reverse
 from django.test import Client
 
 class AdminSiteTests(TestCase):
-    """Tests for Django Admin."""
+    """Tests for Django admin."""
     def setUp(self):
         """Create user and client."""
         self.client = Client()
@@ -19,7 +19,7 @@ class AdminSiteTests(TestCase):
         self.user = get_user_model().objects.create_user(
         email='user@example.com',
         password='testpass123',
-        name='Test user'
+        name='Test User'
         )
 
     def test_users_list(self):
@@ -35,7 +35,7 @@ class AdminSiteTests(TestCase):
         url = reverse('admin:core_user_change', args=[self.user.id])
         res = self.client.get(url)
         
-        self.assertEqual(res.status_code,200)
+        self.assertEqual(res.status_code, 200)
 
     def test_create_user_page(self):
         """Test the create user page works."""
