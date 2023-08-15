@@ -5,10 +5,9 @@
     "\\app\\core",
     "\\app\\core\\tests",
     "\\app\\recipe",
-    "\\app\\recipe\\tests",
     "\\app\\user",
     "\\app\\user\\tests"
   ],
-  "SelectedNode": "\\app\\core\\tests\\test_tags_api.py",
+  "SelectedNode": "\\app\\core\\tests\\test_ingredients_api.py",
   "PreviewInSolutionExplorer": false
 }
