@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app\\app",
-    "\\app\\core",
-    "\\app\\core\\management",
-    "\\app\\core\\management\\commands",
-    "\\app\\core\\tests",
-    "\\app\\recipe",
-    "\\app\\recipe\\tests",
-    "\\app\\user",
-    "\\proxy"
+    "\\proxy",
+    "\\scripts"
   ],
   "SelectedNode": "\\proxy\\Dockerfile",
   "PreviewInSolutionExplorer": false
