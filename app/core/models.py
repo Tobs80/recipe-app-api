@@ -34,7 +34,7 @@ class UserManager(BaseUserManager):
         user = self.create_user(email, password)
         user.is_staff = True
         user.is_superuser = True
-        user.save(using=self.db)
+        user.save(using=self._db)
 
         return user
 
@@ -69,14 +69,14 @@ class Recipe(models.Model):
 
 class Tag(models.Model):
     """Tag for filtering recipe"""
-    name = models.CharField(max_length= 255)
+    name = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
     )
 
     def __str__(self):
-        return self.name 
+        return self.name
 
 class Ingredient(models.Model):
     """Ingredient for recipes."""
@@ -87,6 +87,6 @@ class Ingredient(models.Model):
        )
 
     def __str__(self):
-        return(self.name)
+        return self.name
 
 
